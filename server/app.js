@@ -9,7 +9,6 @@ app.use('/', express.static('../client/build'));
 // Server-Sent Events
 app.get('/sse', (_, res) => {
   res.setHeader("Content-Type", "text/event-stream");
-  let i=0;
   incrementCount(res, 0);
 });
 
