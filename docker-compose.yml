@@ -16,7 +16,7 @@ services:
       - ./usr/src/app/node_modules
   nginx:
     container_name: 'nginx'
-    image: nginx
+    image: nginx:stable
     ports: 
       - '3000:80'
     volumes:
